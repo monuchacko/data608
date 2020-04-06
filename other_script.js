@@ -18,16 +18,15 @@ function LoadPresidentsData(president) {
         if (president == "") {
             var fdata = data
         } else {
-            // Error
-            // var fdata = data.LoadPresidentsData(function (d) {
-            //     if (d.Name.toLowerCase().search(president) > -1) {
-            //         return d
-            //     }
-            // })
+            $.each(data, function (index, value) {
+                if (value.Name.toLowerCase() == president.toLowerCase()) {
+                    $('#resPresident').html('<div>Height: + ' + value.Height + '</div><div>Weight: + ' + value.Weight + '</div>');
+                }
+            });
         }
     })
-
 }
+
 $(document).ready(function () {
 
     $('#btnReverse').on('click', function () {
