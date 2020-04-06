@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro to JS in a Browser</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
+
 <body>
-<!--
-    
+    <!--    
     Note to Students:
 
         This is a very short introduction to using Javascript in the browser.
@@ -39,39 +42,39 @@
 
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="jumbotron">
-                <h1>Intro to JS in a Browser</h1>
-                <h2>All of the below is created with Javascript. </h2>    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1>Intro to JS in a Browser</h1>
+                    <h2>All of the below is created with Javascript. </h2>
+                </div>
             </div>
-        </div>
 
-        <div class="col-md-12">
-            <h2>Reverse Word</h2>
-            
-            <div class="input-group mb-3">
-                <input id="txtReverse" type="text" class="form-control">
-            </div>
-            <div>
-                <button id="btnReverse" class="btn btn-primary">Reverse</button>
-            </div>
-            <div>
-                <label id="lblReverseResult"></label>
-            </div>
-        </div>
+            <div class="col-md-12">
+                <h2>Reverse Word</h2>
 
-        <div class="col-md-12">
-            <h2>Multiples</h2>
-            <div class="input-group mb-3">
-                <input id="txtMultiples" type="number" value="0" class="form-control">
+                <div class="input-group mb-3">
+                    <input id="txtReverse" type="text" class="form-control">
+                </div>
+                <div>
+                    <button id="btnReverse" class="btn btn-primary">Reverse</button>
+                </div>
+                <div>
+                    <label id="lblReverseResult"></label>
+                </div>
             </div>
-            <div>
-                <button id="btnMultiples" class="btn btn-primary">Get Multiples</button>
-            </div>
-            <div id="resMultiples">
-                <!-- <table>
+
+            <div class="col-md-12">
+                <h2>Multiples</h2>
+                <div class="input-group mb-3">
+                    <input id="txtMultiples" type="number" value="0" class="form-control">
+                </div>
+                <div>
+                    <button id="btnMultiples" class="btn btn-primary">Get Multiples</button>
+                </div>
+                <div id="resMultiples">
+                    <!-- <table>
                     <tr><td>2</td><td>4</td><td>6</td><td>8</td></tr>
                     <tr><td>10</td><td>12</td><td>14</td><td>16</td></tr>
                     <tr><td>18</td><td>20</td><td>22</td><td>24</td></tr>
@@ -79,12 +82,24 @@
                     <tr><td>34</td><td>36</td><td>38</td><td>40</td></tr>
                     </table>             -->
                 </div>
+            </div>
+
+            <div class="col-md-12">
+                <h2>Enter </h2>
+                <div class="input-group mb-3">
+                    <input id="txtPresident" type="text" class="form-control">
+                </div>
+                <div>
+                    <button id="btnPresident" class="btn btn-primary">Get President</button>
+                </div>
+                <div id="resPresident">
+                </div>
+            </div>
+
         </div>
-
     </div>
-</div>
 
-<!-- <script type="text/javascript">
+    <!-- <script type="text/javascript">
 
 // Here are some examples of things that you might want to do with Javascript
 
@@ -159,9 +174,10 @@ function calc(){
 
 <div id="target"></div> -->
 
-<script type="text/javascript" src="other_script.js"></script>
+    <script type="text/javascript" src="other_script.js"></script>
 
-<!-- <script type="text/javascript"> document.write(myScript());</script> -->
+    <!-- <script type="text/javascript"> document.write(myScript());</script> -->
 
 </body>
+
 </html>
